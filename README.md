@@ -13,7 +13,7 @@ Bienvenue sur mon portfolio ! Je suis passionné par le développement d'applica
 
 ### 📦 Projets
 
-- **MLSA Pro ** : Un système des gest de l'Entreprise MLSA
+- **MLSA Pro** : Un système des gest de l'Entreprise MLSA
 - **PharMode** : Un sytème de gestion pharmaceutique
 - **Nouvelle vie** : Un système de gestion d'agriculture, Elevage et transport
 
