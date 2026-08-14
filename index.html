@@ -1,27 +1,661 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon Portfolio</title>
+    <title>Didier ZALEMA - Développeur Flutter & Fullstack</title>
+    <meta
+      name="description"
+      content="Portfolio de Didier ZALEMA, développeur Flutter et Fullstack. Découvrez mes projets et compétences."
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
 
   <body>
-    <header>
-      <h1>Bonjour, je suis Didier ZALEMA PS</h1>
-      <p>Développeur Développeur Flutter & Fullstack</p>
-      <p>Je developpe des applications mobiles, des sites web et des logiciels pour pc</p>
-    </header>
-    <section id="projets">
-      <h2>Mes projets</h2>
-      <!-- Ajoutez vos projets ici -->
+    <!-- Navigation -->
+    <nav>
+      <div class="container">
+        <div class="nav-brand">
+          <span class="brand-name">Didier ZALEMA PS</span>
+          <img
+            src="images/LOGO PS.png"
+            alt="Didier ZALEMA Logo"
+            class="logo-img"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#accueil" class="active">Accueil</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Changer le thème"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="badge">👋 Disponible pour vos projets 🤧</span>
+            <h1>Didier <span class="highlight">ZALEMA</span></h1>
+            <h2>Développeur <span class="typing">Fullstack</span></h2>
+            <h3>Flutter et Java SE</h3>
+            <h4>+ Administrateur des bases des données MySQL</h4>
+            <p>
+              Passionné par le développement d'applications mobiles et web. Je
+              crée des expériences digitales modernes, performantes et
+              élégantes.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projets" class="btn btn-primary">
+                <i class="fas fa-code"></i> Voir mes projets
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fas fa-envelope"></i> Me contacter
+              </a>
+            </div>
+            <div class="social-links">
+              <a href="tel:+243844527182" target="_blank"
+                ><i class="fas fa-phone"></i
+              ></a>
+              <a href="https://wa.me/243844527182" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/patron.ptr.26"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://github.com/PatronSilencieux"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jdevinfo-👨‍💻-8a4a4731a"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <a
+                href="https://youtube.com/@jdevinfos?si=OhBcnjZA3yRPEluz"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-wrapper">
+              <img src="images/ps.png" alt="Didier ZALEMA" />
+              <div class="status-dot">
+                <span class="pulse"></span>
+              </div>
+              <div class="floating-badge experience-badge">
+                <i class="fas fa-code"></i>
+                <span>3+ ans d'expérience</span>
+              </div>
+              <div class="floating-badge projects-badge">
+                <i class="fas fa-folder-open"></i>
+                <span>10+ projets</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Découvrez</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Tél : +243 844 527 182</p>
-      <p>Email : Didierzalema56@gmail.com</p>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Mes compétences</span>
+          <h2>Ce que je <span class="highlight">maîtrise</span></h2>
+          <p>Des technologies modernes pour des applications performantes</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-flutter-plain colored"></i>
+            </div>
+            <h3>Flutter</h3>
+            <p>
+              Applications mobiles multiplateformes (Android, Windows, macOS &
+              web)
+            </p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-java-plain colored"></i>
+            </div>
+            <h3>Java</h3>
+            <p>Applications de bureau modernes et dynamiques</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-mysql-plain colored"></i>
+            </div>
+            <h3>MySQL</h3>
+            <p>Base de données relationnelles (SQL) et gestion de données</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="devicon-firebase-plain colored"></i>
+            </div>
+            <h3>Firebase</h3>
+            <p>Base de données en temps réel et authentification</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 50%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-file-excel"></i>
+            </div>
+            <h3>Ms Excel</h3>
+            <p>Automatisation des tâches et analyse de données</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h3>Formateur</h3>
+            <p>Transmission de connaissances et accompagnement pédagogique</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- Section Statistiques -->
+    <section
+      style="
+        padding: 40px 0;
+        background: var(--bg-secondary);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      "
+    >
+      <div class="container">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 24px;
+            text-align: center;
+          "
+        >
+          <div>
+            <div
+              style="font-size: 2.5rem; font-weight: 800; color: var(--primary)"
+            >
+              3+
+            </div>
+            <div style="color: var(--text-secondary); font-weight: 500">
+              Années d'expérience
+            </div>
+          </div>
+          <div>
+            <div
+              style="font-size: 2.5rem; font-weight: 800; color: var(--primary)"
+            >
+              10+
+            </div>
+            <div style="color: var(--text-secondary); font-weight: 500">
+              Projets livrés
+            </div>
+          </div>
+          <div>
+            <div
+              style="font-size: 2.5rem; font-weight: 800; color: var(--primary)"
+            >
+              5+
+            </div>
+            <div style="color: var(--text-secondary); font-weight: 500">
+              Clients satisfaits
+            </div>
+          </div>
+          <div>
+            <div
+              style="font-size: 2.5rem; font-weight: 800; color: var(--primary)"
+            >
+              24h
+            </div>
+            <div style="color: var(--text-secondary); font-weight: 500">
+              Délai de réponse
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Projets -->
+    <section id="projets" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Mes réalisations</span>
+          <h2>Projets <span class="highlight">récents</span></h2>
+          <p>
+            Des applications concrètes deployées dans différentes entreprises
+            qui démontrent mon savoir-faire.
+          </p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/mlsapro.png" alt="Projet 1" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Flutter</span>
+              <h3>MLSA Pro 🎗️</h3>
+              <p>
+                Un système multi-plateforme (Mobile, Web & Desk) de gestion de
+                stock et ventes de l'entreprise MLSA (Malu Semences) à Kimpese.
+                Le système est développé en Flutter et utilise PHP (pour les
+                API) -> MySQL pour la gestion des données.
+              </p>
+              <div class="project-tech">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/pharmodeprint.png" alt="Projet 2" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Flutter</span>
+              <h3>PharMode 💉</h3>
+              <p>
+                Un logiciel de bureau pour la gestion des pharmacies. Elle
+                permet de gérer les stocks, les ventes, les clients et ses
+                différents partenaires. L'application est développée en Flutter
+                et utilise MySQL pour la gestion des données avec PHP pour
+                l'intermédiaire entre Client et le serveur.
+              </p>
+              <div class="project-tech">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/businesshom.png" alt="Projet 3" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Java</span>
+              <h3>My Business</h3>
+              <p>
+                Un logiciel de bureau pour la gestion des livraisons d'un
+                entrepôt. Il permet de gérer les stocks, les livraisons, les
+                versements, les clients et ses différents partenaires.
+                L'application est développée en Java SE et utilise MySQL pour la
+                gestion des données avec PHP pour l'intermédiaire entre Client
+                et le serveur.
+              </p>
+              <div class="project-tech">
+                <span>Java</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/nouvelle.png" alt="Projet 4" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Flutter</span>
+              <h3>Nouvelle Vie</h3>
+              <p>
+                Un système multi-plateforme pour la gestion d'Agriculture,
+                élevage et Transport pour l'Entreprise Nouvelle Vie.
+              </p>
+              <ul
+                style="
+                  padding-left: 20px;
+                  margin-bottom: 10px;
+                  color: var(--text-secondary);
+                  font-size: 0.9rem;
+                "
+              >
+                <li>Les projets agricoles : production, ventes et achats.</li>
+                <li>L'Elevage des animaux et gestion des produits dérivés.</li>
+                <li>
+                  Transport : Contrôle des enjeux et gestion des chauffeurs.
+                </li>
+                <li>Gestion du personnel de l'entreprise.</li>
+              </ul>
+              <p>
+                L'application est développée en Flutter et utilise MySQL pour la
+                gestion des données avec PHP pour l'intermédiaire entre Client
+                et le serveur.
+              </p>
+              <div class="project-tech">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Contactez-moi</span>
+          <h2>Parlons de votre <span class="highlight">projet</span></h2>
+          <p>
+            Vous avez un projet en tête ou une idée à concrétiser ? N'hésitez
+            pas à me contacter pour discuter de vos besoins et voir comment je
+            peux vous aider à les réaliser.
+          </p>
+        </div>
+
+        <!-- Le conteneur principal corrigé -->
+        <div class="contact-wrapper">
+          <!-- Informations de contact (Colonne gauche) -->
+          <div class="contact-info">
+            <div class="contact-details">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=Didierzalema56@gmail.com"
+                target="_blank"
+                style="color: inherit; text-decoration: none"
+              >
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <strong>Email</strong>
+                    <p>Didierzalema56@gmail.com</p>
+                    <!-- Ajoutez ce petit texte en gris -->
+                    <span style="font-size: 0.75rem; color: var(--text-light)"
+                      >(Cliquez pour ouvrir votre messagerie)</span
+                    >
+                  </div>
+                </div>
+              </a>
+              <a
+                href="tel:+243844527182"
+                style="color: inherit; text-decoration: none"
+              >
+                <div class="contact-item">
+                  <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                  <div>
+                    <strong>Téléphone</strong>
+                    <p>+243 844 527 182</p>
+                  </div>
+                </div>
+              </a>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <strong>Localisation</strong>
+                  <p>
+                    République Démocratique du Congo / Kongo Central / Kimpese
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <div>
+                  <strong>GitHub</strong>
+                  <p>@PatronSilencieux</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire amélioré (Colonne droite) -->
+          <div>
+            <!-- Illustration décorative -->
+            <div class="contact-illustration">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Discutons de votre projet</h3>
+              <p>
+                Je suis à l'écoute de vos idées. Remplissez ce formulaire et je
+                vous répondrai dans les plus brefs délais.
+              </p>
+              <div
+                style="
+                  margin-top: 16px;
+                  font-size: 0.9rem;
+                  color: var(--text-secondary);
+                "
+              >
+                <i class="fas fa-clock"></i> Temps de réponse moyen :
+                <strong>24h</strong>
+              </div>
+            </div>
+            <div style="margin-top: 20px"></div>
+            <!-- Le formulaire -->
+            <div class="contact-form-wrapper" id="formWrapper">
+              <form
+                class="contact-form"
+                action="https://formspree.io/f/mvkpqdkg"
+                method="POST"
+              >
+                <div class="form-group">
+                  <label for="name">Votre nom</label>
+                  <div class="input-wrapper">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Jean Dupont"
+                      required
+                    />
+                    <i class="fas fa-user"></i>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Votre email</label>
+                  <div class="input-wrapper">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="jean@exemple.com"
+                      required
+                    />
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Sujet</label>
+                  <div class="input-wrapper">
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="Demande de devis / Application mobile"
+                    />
+                    <i class="fas fa-tag"></i>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <div class="input-wrapper">
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Décrivez votre projet en détail..."
+                      rows="5"
+                      required
+                    ></textarea>
+                    <i
+                      class="fas fa-comment-dots"
+                      style="top: 20px; transform: none"
+                    ></i>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i> Envoyer le message
+                </button>
+              </form>
+
+              <!-- Message de succès -->
+              <div class="success-message" id="successMessage">
+                <i class="fas fa-check-circle"></i>
+                <h3>Message envoyé avec succès !</h3>
+                <p>
+                  Merci de m'avoir contacté. Je vous répondrai dans les plus
+                  brefs délais.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img
+              src="images/LOGO PS.png"
+              alt="Didier ZALEMA Logo2"
+              class="logo-img2"
+            />
+            <p>&copy; 2026 Didier ZALEMA. Tous droits réservés.</p>
+          </div>
+          <div class="footer-social">
+            <div class="social-links">
+              <a href="tel:+243844527182" target="_blank"
+                ><i class="fas fa-phone"></i
+              ></a>
+              <a href="https://wa.me/243844527182" target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/patron.ptr.26"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://github.com/PatronSilencieux"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jdevinfo-👨‍💻-8a4a4731a"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://youtube.com/@jdevinfos?si=OhBcnjZA3yRPEluz"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>
