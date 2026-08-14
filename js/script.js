@@ -4,7 +4,7 @@ const html = document.documentElement;
 const icon = themeToggle.querySelector("i");
 
 // Vérifier le thème sauvegardé
-const savedTheme = localStorage.getItem("theme") || "light";
+const savedTheme = localStorage.getItem("theme") || "dark";
 html.setAttribute("data-theme", savedTheme);
 updateIcon(savedTheme);
 
