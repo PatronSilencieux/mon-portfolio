@@ -2,24 +2,24 @@
 
 ## 🚀 Développeur Flutter & Fullstack
 
-Bienvenue sur mon portfolio ! Je suis passionné par le développement d'applications mobiles et web.
+Bienvenue sur mon portfolio ! Je suis passionné par le développement d'applications mobiles, web et desk.
 
 ### 🔧 Technologies
 
 - Flutter / Dart
-- React / Next.js
-- Node.js / Express
-- Firebase / MongoDB
-- HTML5 / CSS3 / JavaScript
+- Firebase / Firestor
+- Java / Java SE
+- Base des données relationnelles / MySQL
 
 ### 📦 Projets
 
-- **Projet 1** : Description
-- **Projet 2** : Description
-- **Projet 3** : Description
+- **MLSA Pro ** : Un système des gest de l'Entreprise MLSA
+- **PharMode** : Un sytème de gestion pharmaceutique
+- **Nouvelle vie** : Un système de gestion d'agriculture, Elevage et transport
 
 ### 📫 Contact
 
+- +243 844 527 182
 - Email : Didierzalema56@gmail.com
 - GitHub : [PatronSilencieux](https://github.com/PatronSilencieux)
 
