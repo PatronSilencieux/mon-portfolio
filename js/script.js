@@ -4,7 +4,7 @@ const html = document.documentElement;
 const icon = themeToggle.querySelector("i");
 
 // Vérifier le thème sauvegardé
-const savedTheme = localStorage.getItem("theme") || "dark";
+const savedTheme = localStorage.getItem("theme") || "light";
 html.setAttribute("data-theme", savedTheme);
 updateIcon(savedTheme);
 
@@ -212,3 +212,30 @@ revealElements.forEach((el) => {
   revealObserver.observe(el);
 });
 console.log("🚀 Portfolio Didier ZALEMA - Design Pro avec Dark Mode");
+
+// ===== MODAL CV =====
+const cvModal = document.getElementById("cvModal");
+
+function openCVModal() {
+  cvModal.classList.add("active");
+  document.body.style.overflow = "hidden"; // Empêche le scroll derrière la modale
+}
+
+function closeCVModal() {
+  cvModal.classList.remove("active");
+  document.body.style.overflow = ""; // Réactive le scroll
+}
+
+// Fermer la modale quand on clique en dehors du contenu
+window.addEventListener("click", (e) => {
+  if (e.target === cvModal) {
+    closeCVModal();
+  }
+});
+
+// Fermer avec la touche Echap
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && cvModal.classList.contains("active")) {
+    closeCVModal();
+  }
+});
